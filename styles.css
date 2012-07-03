@@ -1,0 +1,85 @@
+body {
+	font-family: arial, helvetica, serif;
+	margin: 0;
+	padding: 0;
+	background: url(./images/lgrey053.jpg);
+}
+
+#container {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	}
+/*=============MENU==============*/
+#nav, #nav ul { /* all lists */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+}
+
+#nav a {
+	display: block;
+	width: 162px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+#nav li { /* all list items */
+	float: left;
+	width: 164px; /* width needed or else Opera goes nuts */
+	text-align: center;
+	background: #330099;
+}
+
+#nav li ul { /* second-level lists */
+	position: absolute;
+	width: 10em;
+	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+}
+
+#nav li ul ul { /* third-and-above-level lists */
+	margin: -1em 0 0 10em;
+}
+
+#nav li:hover ul ul, #nav li.sfhover ul ul {
+	left: -999em;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+}
+/* ========== Content ============ */
+#content {
+	clear: left;
+	color: #000;
+	padding-left: 8px;
+}
+#contentcontainer {
+	background: white;
+	margin: 0;
+	padding: 0;
+	width: 820px;
+}
+#border {
+	padding: 15px;
+	background: #330099;
+	width: 825px;
+	margin: 0 auto;
+}
+#content #barb {
+	float: left;
+	padding: 4px 9px 4px 4px;
+}
+#content #summary img{
+	margin: 0 auto;
+	}
+#footer {
+	text-align: center;
+	color: #BBB;
+	border-top: 1px solid #BBB;
+}
+#footer span {
+	
+}
